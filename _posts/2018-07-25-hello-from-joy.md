@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Hello There.
+title: "Hello There."
+tags: [personal]
+categories: [personal]
 ---
 
 ### Hello There.

@@ -1,86 +1,108 @@
-#
-# This file contains configuration flags to customize your site
-#
+# ============================================================
+# NexT Jekyll Theme Configuration
+# ============================================================
 
-# Name of your site (displayed in the header)
-name: JoySnow
+remote_theme: Simpleyyt/jekyll-theme-next@v5.1.2
 
-# Short bio or description (displayed in the header)
-#description: Web Developer from Somewhere
+# Site Settings
+title: JoySnow
+subtitle:
+description:
+author: JoySnow
+language: en
+timezone:
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/13017832
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+url: https://joysnow.github.io
 baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
 
 permalink: /:title/
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Pagination
+paginate: 10
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# Markdown / Syntax Highlighting
+markdown: kramdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+highlight_theme: normal
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+# ============================================================
+# NexT-Specific Settings
+# ============================================================
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+# Menu (uncomment to show)
+menu:
+  home: /
+  archives: /archives/
+  tags: /tags/
+  categories: /categories/
 
-# Exclude these files from your production _site
+menu_icons:
+  enable: true
+
+# Scheme: Muse | Mist | Pisces | Gemini
+scheme: Muse
+
+# Sidebar
+sidebar:
+  position: left
+  display: post
+  offset: 12
+  b2t: false
+  scrollpercent: false
+
+avatar: https://avatars0.githubusercontent.com/u/13017832
+
+# Social Links
+social:
+  GitHub: https://github.com/joysnow
+
+social_icons:
+  enable: true
+
+# Post Meta
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: false
+  categories: true
+
+# Comments
+disqus:
+  enable: false
+  shortname:
+  count: false
+  hide: false
+
+# Analytics
+google_analytics:
+
+# RSS
+rss:
+
+# Copyright
+copyright: true
+since: 2018
+
+# Local Search
+local_search:
+  enable: false
+  trigger: auto
+  top_n_per_article: 1
+
+# SEO
+canonical: true
+seo: false
+
+# ============================================================
+# Technical Settings
+# ============================================================
+
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - README.md
   - CNAME
+  - vendor
+  - .gitignore
