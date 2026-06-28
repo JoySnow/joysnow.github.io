@@ -101,9 +101,11 @@ local_search:
   trigger: auto
   top_n_per_article: 1
 
-# Animation (set to false to prevent motion CSS from hiding content)
-# Sidebar toggle button still works independently.
-use_motion: false
+# Animation
+use_motion: true
+
+# Fancybox (lightbox for images)
+fancybox: false
 
 # Plugins
 plugins:
