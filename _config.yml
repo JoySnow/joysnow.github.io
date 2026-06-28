@@ -5,10 +5,11 @@
 # Site Settings
 title: JoySnow
 subtitle:
-description:
+description: "Joy's personal blog"
 author: JoySnow
 language: en
 timezone:
+date_format: '%Y-%m-%d'
 
 url: https://joysnow.github.io
 baseurl: ""
@@ -38,17 +39,27 @@ menu:
 
 menu_icons:
   enable: true
+  home: home
+  archives: archive
+  tags: tags
+  categories: th
 
 # Scheme: Muse | Mist | Pisces | Gemini
-scheme: Muse
+scheme: Mist
 
 # Sidebar
 sidebar:
   position: left
-  display: post
+  display: always
   offset: 12
   b2t: false
   scrollpercent: false
+
+# Table of Contents
+toc:
+  enable: true
+  number: true
+  wrap: false
 
 avatar: https://avatars0.githubusercontent.com/u/13017832
 
@@ -58,6 +69,7 @@ social:
 
 social_icons:
   enable: true
+  GitHub: github
 
 # Post Meta
 post_meta:
@@ -88,6 +100,32 @@ local_search:
   enable: false
   trigger: auto
   top_n_per_article: 1
+
+# Animation
+use_motion: true
+
+# Plugins
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+
+# Font
+font:
+  enable: true
+  host:
+  global:
+    external: true
+    family: Lato
 
 # SEO
 canonical: true
