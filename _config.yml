@@ -13,6 +13,11 @@ date_format: '%Y-%m-%d'
 excerpt_separator: "\n\n"
 excerpt_description: true
 
+# Auto excerpt (fallback for posts without explicit separator)
+auto_excerpt:
+  enable: true
+  length: 150
+
 url: https://joysnow.github.io
 baseurl: ""
 
