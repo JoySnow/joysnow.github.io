@@ -12,6 +12,8 @@ timezone:
 date_format: '%Y-%m-%d'
 excerpt_separator: "<!--more-->"
 excerpt_description: true
+keywords: "Jekyll, NexT, blog, JoySnow"
+index_with_subtitle: false
 
 url: https://joysnow.github.io
 baseurl: ""
@@ -27,6 +29,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlight_theme: normal
+
+# Favicon
+favicon: /assets/favicon.svg
 
 # ============================================================
 # NexT-Specific Settings
@@ -49,13 +54,17 @@ menu_icons:
 # Scheme: Muse | Mist | Pisces | Gemini
 scheme: Mist
 
+# Scroll / Reading
+scroll_to_more: true
+save_scroll: true
+
 # Sidebar
 sidebar:
   position: left
   display: always
   offset: 12
-  b2t: false
-  scrollpercent: false
+  b2t: true
+  scrollpercent: true
 
 # Table of Contents
 toc:
@@ -77,8 +86,21 @@ social_icons:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
+
+# Post Word Count
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+
+# Post Copyright
+post_copyright:
+  enable: true
+
+# Creative Commons
+creative_commons: by-nc-sa
 
 # Comments
 disqus:
@@ -90,8 +112,12 @@ disqus:
 # Analytics
 google_analytics:
 
-# RSS
+# RSS / Feed
 rss:
+
+# Feed
+feed:
+  path: atom.xml
 
 # Copyright
 copyright: true
@@ -134,7 +160,7 @@ font:
 
 # SEO
 canonical: true
-seo: false
+seo: true
 
 # ============================================================
 # Asset & Vendor Settings
