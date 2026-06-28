@@ -2,8 +2,6 @@
 # NexT Jekyll Theme Configuration
 # ============================================================
 
-remote_theme: Simpleyyt/jekyll-theme-next@v5.1.2
-
 # Site Settings
 title: JoySnow
 subtitle:
