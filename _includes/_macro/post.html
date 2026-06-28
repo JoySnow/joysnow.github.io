@@ -300,7 +300,7 @@
           </div>
           <!--/noindex-->
         {% elsif post.excerpt  %}
-          {% assign excerpt_text = post.excerpt | strip_html | truncate: 300 %}
+          {% assign excerpt_text = post.excerpt | strip_html | truncatewords: 30 %}
           {{ excerpt_text }}
           <!--noindex-->
           <div class="post-button text-center">
