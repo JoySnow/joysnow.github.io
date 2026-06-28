@@ -300,7 +300,8 @@
           </div>
           <!--/noindex-->
         {% elsif post.excerpt  %}
-          {% include _macro/post-excerpt.html %}
+          {% assign excerpt_text = post.excerpt | strip_html | truncate: 300 %}
+          {{ excerpt_text }}
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ post.url | relative_url }}{% if site.scroll_to_more %}#{{ __.post.more }}{% endif %}" rel="contents">
