@@ -1,0 +1,3 @@
+- issue#1 for a post, Why not show tags like the category in the homepage? 
+- issue#2 for a post page, why the tag are show at the tail, not viewable behind the title, or show like the category?
+- issue#3 for a post status bar under the title, why show as "Post modified" even for a new post? Posted on 2026-06-28 means the post create time, right? and what "Post modified" mean?
