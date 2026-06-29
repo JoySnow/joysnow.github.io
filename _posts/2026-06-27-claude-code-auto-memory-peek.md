@@ -2,7 +2,7 @@
 layout: post
 title: "Claude Code Auto Memory 解读"
 categories:
- - Agent
+ - LLM
 tags:
  - Claude Code
  - Agent
